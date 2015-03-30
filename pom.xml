@@ -8,8 +8,8 @@
     <packaging>aar</packaging>
 
     <name>Android Auth</name>
-    <description>Android Google Could Print client library.</description>
-    <url>http://www.groundupworks.com/</url>
+    <description>Android Google authentication library</description>
+    <url>http://www.groundupworks.com</url>
 
     <licenses>
         <license>
