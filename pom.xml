@@ -4,7 +4,7 @@
 
     <groupId>com.groundupworks.android</groupId>
     <artifactId>google-auth</artifactId>
-    <version>1.0.3-SNAPSHOT</version>
+    <version>1.0.3</version>
     <packaging>aar</packaging>
 
     <name>Android Auth</name>
@@ -23,7 +23,8 @@
         <connection>scm:git:git://github.com/groundupworks/android-auth.git</connection>
         <developerConnection>scm:git:git@github.com:groundupworks/android-auth.git</developerConnection>
         <url>git@github.com:groundupworks/android-auth</url>
-    </scm>
+      <tag>google-auth-1.0.3</tag>
+  </scm>
 
     <developers>
         <developer>
