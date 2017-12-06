@@ -27,7 +27,7 @@ import com.groundupworks.android.auth.fragment.OperatorGoogleAuthenticationFragm
 import com.groundupworks.android.auth.fragment.OperatorGoogleAuthenticationSupportFragmentController;
 
 import rx.Observable;
-import rx.android.observables.AndroidObservable;
+import rx.android.app.AppObservable;
 
 /**
  * This class implements an Observable that emits access tokens to access the Google APIs under
@@ -139,7 +139,7 @@ public class GoogleOauthTokenObservable extends Observable<String> {
             throw new IllegalArgumentException("Activity can not be null.");
         }
 
-        return AndroidObservable.bindActivity(activity, this)
+        return AppObservable.bindActivity(activity, this)
                 .lift(new OperatorGoogleAuthenticationActivityController(activity, requestCodeBase));
     }
 
@@ -159,7 +159,7 @@ public class GoogleOauthTokenObservable extends Observable<String> {
             throw new IllegalArgumentException("Fragment can not be null.");
         }
 
-        return AndroidObservable.bindFragment(fragment, this)
+        return AppObservable.bindFragment(fragment, this)
                 .lift(new OperatorGoogleAuthenticationFragmentController(fragment, requestCodeBase));
     }
 
@@ -180,7 +180,7 @@ public class GoogleOauthTokenObservable extends Observable<String> {
             throw new IllegalArgumentException("Support fragment can not be null.");
         }
 
-        return AndroidObservable.bindFragment(fragment, this)
+        return AppObservable.bindSupportFragment(fragment, this)
                 .lift(new OperatorGoogleAuthenticationSupportFragmentController(fragment,
                         requestCodeBase));
     }
