@@ -18,7 +18,7 @@ ext {
     supportV4Version = '25.3.1'
     if (LOCAL.toBoolean()) {
         RELEASE_REPOSITORY_URL = "file://${System.getProperty("user.home")}/.m2/repository"
-        SNAPSHOT_REPOSITORY_URL = "file://${System.getProperty("user.home")}/.m2/repository/snapshots"
+        SNAPSHOT_REPOSITORY_URL = "file://${System.getProperty("user.home")}/.m2/repository"
     }
 }
 
